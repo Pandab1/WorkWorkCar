@@ -1,0 +1,13 @@
+body{
+    background-image: url('../img/accueil.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+header{
+    position: sticky;
+    background-color: black;
+    padding: 50px;
+}
