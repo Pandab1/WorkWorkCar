@@ -44,22 +44,22 @@ p {
 }
 
 #log:link {
-    color: rgb(62, 45, 210);
+    color: rgb(215, 101, 156);
     text-decoration: none;
 }
 
 #log:visited {
-    color: rgb(108, 0, 216);
+    color: rgb(255, 121, 121);
     text-decoration: none;
 }
 
 #log:hover {
-    color: rgb(160, 153, 225);
+    color: rgb(216, 0, 180);
     text-decoration: none;
 }
 
 #log:active {
-    color: rgb(255, 255, 255);
+    color: rgb(97, 0, 0);
     text-decoration: none;
 }
 
