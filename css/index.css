@@ -1,0 +1,92 @@
+body {
+    background-image: url("../img/accueil.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.865);
+    border-radius: 20px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    padding: 1vh 0px 4vh 0px;
+}
+
+main>h1,h3 {
+    text-align: center;
+}
+
+main>h1 {
+    margin-bottom: 4px;
+    font-size: 7vh;
+}
+
+main>h3 {
+    margin-top: 4px;
+    font-size: 3vh;
+}
+
+main>a {
+    transition: 0.2s;
+}
+
+p {
+    text-align: center;
+}
+
+#log {
+    margin: auto;
+}
+
+#log:link {
+    color: rgb(62, 45, 210);
+    text-decoration: none;
+}
+
+#log:visited {
+    color: rgb(108, 0, 216);
+    text-decoration: none;
+}
+
+#log:hover {
+    color: rgb(160, 153, 225);
+    text-decoration: none;
+}
+
+#log:active {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#start {
+    text-align: center;
+    background-color: white;
+    margin: 0px 15vw 0px 15vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 20px;
+}
+
+#start:link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#start:hover {
+    background-color: rgb(79, 79, 79);
+    color: white;
+}
+
+#start:visited {
+    color: black;
+}
+
+#start:active {
+    color: white;
+    background-color: black;
+}

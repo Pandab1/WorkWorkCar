@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Work Work Car - Accueil</title>
-	<link rel="stylesheet" href="css/main.css">
-</head>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Work Work Car - Accueil</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/main.js"></script>
+    </head>
 
-<body>
-    <header>
-        <ul>
-            <li><h1>Work Work Car</h1></li>
-            <li style="float:right"><span onclick="openNav()">&#9776; Menu</span></li>
-        </ul>
-    </header>
-    <main>
-        <h1>Work Work Car</h1>
-        <h3>Le covoiturage, entre collègues.</h3>
-        <a href="register.html" id="start">COMMENCEZ</a>
-        <p>Déjà inscrit ? <a href="login.html" id="log">Connectez-vous</a></p>
-    </main>
+    <body>
+        <header>
+            <ul>
+                <li><h1>Work Work Car</h1></li>
+                <li style="float:right"><span onclick="openNav()">&#9776; Menu</span></li>
+            </ul>
+        </header>
+        <main>
+            <h1>Work Work Car</h1>
+            <h3>Le covoiturage, entre collègues.</h3>
+            <a href="register.html" id="start">COMMENCEZ</a>
+            <p>Déjà inscrit ? <a href="login.html" id="log">Connectez-vous</a></p>
+        </main>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="login.html">Se connectez</a>
+            <a href="register.html">S'inscrire</a>
+            <a href="rent.html">Louer un vehicule</a>
+            <!-- <a href="#"></a> -->
+        </div>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "270px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-</body>
+        <script>
+            
+        </script>
+    </body>
+</html>
