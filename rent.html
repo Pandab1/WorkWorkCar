@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Work Work Car - Accueil</title>
+        <title>Work Work Car - Location</title>
         <link rel="stylesheet" href="css/main.css">
-        <!-- <link rel="stylesheet" href="css/index.css"> -->
+        <link rel="stylesheet" href="css/rent.css">
         <script type="text/javascript" src="js/script.js"></script>
     </head>
 
@@ -25,5 +25,26 @@
             <a href="login.html">Se connectez</a>
             <!-- <a href="#"></a> -->
         </div>
+
+        <main>
+            <h1>Louer son véhicule</h1>
+
+            <form>
+                <label for="user">Informations personelles</label>
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Prénom">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Adresse">
+                <label for="vehicule">Choisissez le type de véhicule</label>
+                <select>
+                    <option value="velo">Vélo</option>
+                    <option value="trottinette">trottinette</option>
+                    <option value="roller">roller</option>
+                    <option value="skate">skate</option>
+                </select>
+                <button type="submit" onclick="alert('Votre offre a bien été envoyé ! Merci d\' utiliser nos services !')">Louer</button>
+            </form>
+        </main>
+
     </body>
 </html>
