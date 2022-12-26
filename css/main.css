@@ -5,8 +5,6 @@ body {
     flex-direction: column;
 }
 
-/* responsive design starting at 500px width */
-
 header {
     color: white;
     background-color: black;
