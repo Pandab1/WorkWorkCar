@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Work Work Car - Prêter un véhicule</title>
+	<link rel="stylesheet" href="./css/choix.css">
+	<link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <div class="head">
+        <header><h2><a href="index.html" class="WorkWorkCar">Work Work Car</a></h2></header>
+    </div>
+    <h1>Prêter un véhicule</h1>
+
+    <div id="form">
+        <p>Type de véhicule</p>
+        <select name="vehicule" id="vehicule">
+            <option value="voiture">Voiture</option>
+            <option value="velo">Vélo</option>
+            <option value="trotinette">Trotinette</option>
+            <option value="autre">Autre</option>
+        </select>
+
+        <p>Localisation</p>
+        <input type="text" required/>
+
+        <p>Du</p>
+        <input type="date" required/>
+
+        <p>Au</p>
+        <input type="date" required/>
+
+        <p></p>
+        <input type="submit" value="Envoyer"/>
+    </div>
+</body>

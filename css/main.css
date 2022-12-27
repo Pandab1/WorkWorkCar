@@ -1,0 +1,38 @@
+body{
+    background-image: url('../img/accueil.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.head {
+    margin: -8px;
+    display: flex;
+    background-color: #101010;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.bouton {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 2px;
+    margin-top: 20px;
+}
