@@ -7,30 +7,24 @@
         <title>Work Work Car - Accueil</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/index.css">
-        <script type="text/javascript" src="js/script.js"></script>
     </head>
 
     <body>
         <header>
             <ul>
                 <li><h1>Work Work Car</h1></li>
-                <li style="float:right"><span onclick="openNav()">&#9776; Menu</span></li>
             </ul>
         </header>
 
         <main>
             <h1>Work Work Car</h1>
             <h3>Le covoiturage, entre collègues.</h3>
-            <a href="register.html" id="start">COMMENCEZ</a>
-            <p>Déjà inscrit ? <a href="login.html" id="log">Connectez-vous</a></p>
+            <div class="buttons">
+                <a href="register.html" class="button">Inscription / Connexion</a>
+                <a href="#" class="button">Co-voiturage</a>
+                <a href="rent.html" class="button">Location</a>
+                <a href="#" class="button">Réserver</a>
+            </div>
         </main>
-
-        <div id="sideNav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="register.html">S'inscrire</a>
-            <a href="login.html">Se connectez</a>
-            <a href="rent.html">Louer un vehicule</a>
-            <a href="rgpd.html">RGPD</a>
-        </div>
     </body>
 </html>

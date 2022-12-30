@@ -2,49 +2,136 @@
 
 body {
     background-color: rgb(41, 41, 41);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-    color: rgb(0, 0, 0);
-    background-color: rgb(220, 220, 220);
-    border-radius: 20px;
-    margin-left: 30vw;
-    margin-right: 30vw;
-    padding: 1vh 0px 4vh 0px;
     font-family: 'Ubuntu';
 }
 
-main>form, main>h1 {
-    display: grid;
-    gap: 20px;
+:root{
+    --color-primary: #1976D2;
+    --tab-width: 500px;
+    --button-width: 64px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.widget{
+    background: #17181a;
+    width: var(--tab-width);
+    border-radius: 8px;
+    margin-top: 20vh;
+    margin-left: 34vw;
+}
+
+.tabs>input{
+    display: none;
+}
+
+h2{
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding-left: 2%;
 }
 
-main>form {
-    width: 95%;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-main>form>label {
-    text-align: left;
-    color: rgba(0, 0, 0, 0.749);
+form>input {
+    margin-top: 1vh;
 }
 
-main>form>input, main>form>select, main>form>button {
-    font-family: inherit;
+.content{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
 }
 
-main>form>input, main>form>select {
-    border: solid 2px rgb(18, 18, 18);
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    background-color: white;
-    height: 3vh;
+.content-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: calc(var(--tab-width) * 2);
+    transition: 0.3s;
 }
 
-main>form>input:hover {
-    border: solid 2px rgb(147, 147, 147);
+.content-inner > div{
+    width: inherit;
+    padding: 20px;
 }
+
+label{
+    padding: 20px;
+    font-size: 15px;
+    width: var(--button-width);
+    opacity: 0.35;
+    cursor: pointer;
+}
+
+p{
+    margin: 0;
+    font-size: 15px;
+    color: #d8d8d8;
+}
+
+.buttons{
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #575757;
+    color: white;
+}
+
+.underline{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 64px;
+    height: 3px;
+    background: var(--color-primary);
+    transition: 0.2s;
+}
+
+.tabs input:nth-child(1):checked ~ .buttons .underline{
+    translate: 0 0;
+}
+
+.tabs input:nth-child(2):checked ~ .buttons .underline{
+    translate: var(--button-width) 0;
+}
+
+.tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .buttons label:nth-child(2){
+    opacity: 1;
+}
+
+.tabs input:nth-child(1):checked ~ .content > .content-inner{
+    translate: 0 0;
+}
+
+.tabs input:nth-child(2):checked ~ .content > .content-inner{
+    translate: calc(0px - var(--tab-width)) 0;
+}
+
+/* @media screen and (max-width: 500px) {
+    .widget {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .content-inner {
+        width: 200%;
+    }
+
+    .tabs input:nth-child(2):checked ~ .content > .content-inner {
+        translate: -200% 0;
+    }
+} */

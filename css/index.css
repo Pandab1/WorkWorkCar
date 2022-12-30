@@ -14,7 +14,8 @@ main {
     border-radius: 20px;
     margin-left: 30vw;
     margin-right: 30vw;
-    padding: 1vh 0px 4vh 0px;
+    padding: 1vh 5px 4vh 5px;
+    font-family: inherit;
 }
 
 main>h1,h3 {
@@ -31,62 +32,24 @@ main>h3 {
     font-size: 3vh;
 }
 
-main>a {
-    transition: 0.2s;
-}
-
-p {
+.buttons {
     text-align: center;
+    margin-top: 2vh;
 }
 
-#log {
-    margin: auto;
-}
-
-#log:link {
-    color: rgb(215, 101, 156);
-    text-decoration: none;
-}
-
-#log:visited {
-    color: rgb(255, 121, 121);
-    text-decoration: none;
-}
-
-#log:hover {
-    color: rgb(216, 0, 180);
-    text-decoration: none;
-}
-
-#log:active {
-    color: rgb(97, 0, 0);
-    text-decoration: none;
-}
-
-#start {
-    text-align: center;
+.button {
+    margin: 0 5px 0 5px;
+    padding: 10px;
     background-color: white;
-    margin: 0px 15vw 0px 15vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    border-radius: 20px;
-}
-
-#start:link {
+    border-radius: 10px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-#start:hover {
-    background-color: rgb(79, 79, 79);
-    color: white;
-}
-
-#start:visited {
     color: black;
+    font-size: large;
+    font-weight: 400;
 }
 
-#start:active {
-    color: white;
+.button:hover {
+    cursor: pointer;
     background-color: black;
+    color: white;
 }
