@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(41, 41, 41);
+}
+
+main {
+    margin-top: 10%;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    padding: 1vh 5px 4vh 5px;
+    font-family: inherit;
+}
+
+img {
+    width: 25%;
+    height: auto;
+}
+
+main>h1 {
+    text-align: center;
+}
+
+main>ul>li>h3 {
+    margin: 0;
+}
+
+main>ul>li {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 25px;
+    margin-bottom: 25px;
+}
+
+main>ul>li>p {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-decoration: underline;
+}
+
+main>ul>li>img {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+button {
+    background-color: white;
+    color: black;
+    font-size: large;
+    height: 30px;
+    border-width: 3px;
+    border-radius: 10px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
