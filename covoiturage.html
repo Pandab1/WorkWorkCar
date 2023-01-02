@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Work Work Car - Louer</title>
+        <title>Work Work Car</title>
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/rent.css">
+        <link rel="stylesheet" href="css/covoiturage.css">
         <script type="text/javascript" src="js/script.js"></script>
     </head>
 <body>
@@ -23,24 +23,19 @@
         <a href="index.html">Accueil</a>
         <a href="login.html">Se connectez</a>
         <a href="reserve.html">Réserver un vehicule</a>
-        <a href="covoiturage.html">Co-Voiturer</a>
+        <a href="rent.html">Louer un vehicule</a>
         <a href="rgpd.html">RGPD</a>
     </div>
 
     <main>
-        <h1>Louer un véhicule</h1>
+        <h1>Créer un trajet</h1>
         <form>
-            <select name="vehicule">
-                <option value="velo">Vélo</option>
-                <option value="trotinette">Trotinette</option>
-                <option value="roller">Roller</option>
-                <option value="skate">Skate</option>
-            </select>
-            <div>
-                <input type="checkbox" id="free">
-                <label for="free">Gratuitement ?</label>
-            </div>
-            <input type="submit" value="Louer" onclick="alert('Votre offre a bien été envoyée !')">
+            <input type="text" placeholder="Ville de départ">
+            <input type="text" placeholder="Ville d'arrivée">
+            <input type="text" placeholder="Nombre de passagers max">
+            <label for="date">Jour et heure du départ :</label>
+            <input type="datetime-local" id="date">
+            <input type="submit" value="Créer" id="button" onclick="alert('Votre trajet a bien été enregistrer !')">
         </form>
     </main>
     
